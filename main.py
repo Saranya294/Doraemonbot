@@ -7,7 +7,7 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content(" from now your name is Draemon Ai: "+txt)
+    response = model.generate_content(" Draemon Ai: "+txt)
     return response.text
 
 st.title("Welcome to Doraemon Ai")
